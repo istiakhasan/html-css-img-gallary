@@ -1,0 +1,52 @@
+.photo-frame{
+    
+    
+    position: relative;
+    overflow: hidden;
+   
+}
+.photo-gallary{
+    position: relative;
+    height: 300px;
+}
+
+.photo-gallary>img{
+ width: 100%;
+ height: 100%;
+    
+}
+.photo-details{
+    position: absolute;
+    top: 0;
+    
+    color: white;
+    display: none;
+}
+.photo-frame:hover .photo-details{
+    display: block;
+    cursor: pointer;
+    background-color: rgba(255, 99, 71, 0.486);
+    height: 100%;
+}
+
+.photo-frame:hover .photo-gallary>img{
+    transform: scale(1.5)  skew(30deg);
+    transition: transform 2s ease-in-out;
+}
+.photo-wraper{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+  
+}
+h3{
+    background-color: black;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+p{
+    text-align: justify;
+}
